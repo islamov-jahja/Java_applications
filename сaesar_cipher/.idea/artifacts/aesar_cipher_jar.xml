@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="сaesar_cipher:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/aesar_cipher_jar</output-path>
+    <root id="archive" name="сaesar_cipher.jar">
+      <element id="module-output" name="сaesar_cipher" />
+    </root>
+  </artifact>
+</component>
