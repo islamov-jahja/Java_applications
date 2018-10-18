@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NetAdress:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NetAdress_jar</output-path>
+    <root id="archive" name="NetAdress.jar">
+      <element id="module-output" name="NetAdress" />
+    </root>
+  </artifact>
+</component>
