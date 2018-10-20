@@ -49,22 +49,22 @@ public class InfoAboutType {
 
     private static void PrintDouble() {
         System.out.printf("%s", Double.TYPE);
-        System.out.printf("%25.4f", Double.MIN_VALUE);
-        System.out.printf("%25.4f", Double.MAX_VALUE);
+        System.out.printf("%23s", Double.toString(Double.MIN_VALUE));
+        System.out.printf("%25s", Double.toString(Double.MAX_VALUE));
         System.out.printf("%24d%n", Double.SIZE);
     }
 
     private static void PrintFloat() {
         System.out.printf("%s", Float.TYPE);
-        System.out.printf("%25.4f", Float.MIN_VALUE);
-        System.out.printf("%25.4f", Float.MAX_VALUE);
+        System.out.printf("%24s", Float.toString(Float.MIN_VALUE));
+        System.out.printf("%25s", Float.toString(Float.MAX_VALUE));
         System.out.printf("%24d%n", Float.SIZE);
     }
 
     private static void PrintChar(){
         System.out.printf("%s", Character.TYPE);
-        System.out.printf("%25c", Character.MIN_VALUE);
-        System.out.printf("%25c", Character.MAX_VALUE);
+        System.out.printf("%25d", (int)Character.MIN_VALUE);
+        System.out.printf("%25d", (int)Character.MAX_VALUE);
         System.out.printf("%24d%n", Character.SIZE);
     }
 }
