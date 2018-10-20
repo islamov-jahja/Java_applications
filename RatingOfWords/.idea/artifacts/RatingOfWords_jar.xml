@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RatingOfWords:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RatingOfWords_jar</output-path>
+    <root id="archive" name="RatingOfWords.jar">
+      <element id="module-output" name="RatingOfWords" />
+    </root>
+  </artifact>
+</component>
