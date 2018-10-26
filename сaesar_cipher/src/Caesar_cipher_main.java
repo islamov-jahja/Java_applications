@@ -38,65 +38,48 @@ public class Caesar_cipher_main {
         for(int i = 0; i < word.length(); i++) {
             boolean isLowerCase = true;
             char letter = word.charAt(i);
-
-            if (!(letter >= 'a' && letter <= 'z')) {
+            if(Character.isUpperCase(letter)) {
                 isLowerCase = false;
                 letter = Character.toLowerCase(letter);
             }
 
-            if(Character.isLetter((char) ((int) letter + key)))
-                newString += ((char) ((int) letter + key));
-            else{
-                int keyCheck = key;
-                keyCheck -= (int)'z' -  (int) letter;
-                keyCheck = keyCheck % 26;
-                if(keyCheck != 0) {
-                    if (isLowerCase)
-                        newString += ((char) ((int) 'a' + keyCheck - 1));
-                    else
-                        newString += (Character.toUpperCase ((char) ((int) 'a' + keyCheck - 1)));
-                }
-                else {
-                    if (isLowerCase)
-                        newString += 'z';
-                    else
-                        newString += 'Z';
-                }
+            key = key % 26;
+            if((int)letter + key <= (int)'z'){
+              if (isLowerCase)
+                  newString += (char) ((int)letter + key);
+              else
+                  newString += Character.toUpperCase((char) ((int)letter + key));
+            } else {
+                if (isLowerCase)
+                    newString += (char)((int)'a' + ((int)key - 1 - ((int)'z' - (int) letter)));
+                else
+                    newString += Character.toUpperCase ((char)((int)'a' + ((int)key - 1 - ((int)'z' - (int) letter))));
             }
         }
-
         return newString;
     }
 
     private static String GetDecodeWord(String word, int key) {
-        String newString  = new String();
+        String newString = new String();
         for(int i = 0; i < word.length(); i++) {
             boolean isLowerCase = true;
             char letter = word.charAt(i);
-
-            if (!(letter >= 'a' && letter <= 'z')) {
+            if(Character.isUpperCase(letter)) {
                 isLowerCase = false;
                 letter = Character.toLowerCase(letter);
             }
 
-            if(Character.isLetter((char) ((int) letter - key)))
-                newString += ((char) ((int) letter + key));
-            else{
-                int keyCheck = key;
-                keyCheck -= (int) letter - (int)'a';
-                keyCheck = keyCheck % 26;
-                if(keyCheck != 0) {
-                    if (isLowerCase)
-                        newString += ((char) ((int) 'z' - keyCheck + 1));
-                    else
-                        newString += Character.toUpperCase(((char) ((int) 'z' - keyCheck + 1)));
-                }
-                else {
-                    if (isLowerCase)
-                        newString += 'a';
-                    else
-                        newString += 'A';
-                }
+            key = key % 26;
+            if((int)letter - key >= (int)'a'){
+                if (isLowerCase)
+                    newString += (char) ((int)letter - key);
+                else
+                    newString += Character.toUpperCase((char) ((int)letter - key));
+            } else {
+                if (isLowerCase)
+                    newString += (char)((int)'z' - ((int) key - 1 - (((int) letter - (int)'a'))));
+                else
+                    newString += Character.toUpperCase ((char)((int)'z' - ((int) key - 1 - (((int) letter - (int)'a')))));
             }
         }
         return newString;
