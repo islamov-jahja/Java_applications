@@ -1438,7 +1438,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -1466,13 +1466,6 @@
               <item name="Course Java английский1" type="ed842865:CourseNode" />
               <item name="Java.OOP" type="76d92c43:SectionNode" />
               <item name="lab2" type="d53b8fed:LessonNode" />
-            </path>
-            <path>
-              <item name="Course_Java_английский1" type="a264ea2a:RootNode" />
-              <item name="Course Java английский1" type="ed842865:CourseNode" />
-              <item name="Java.OOP" type="76d92c43:SectionNode" />
-              <item name="lab2" type="d53b8fed:LessonNode" />
-              <item name="src" type="4928525d:TaskNode" />
             </path>
           </expand>
           <select />
@@ -1556,16 +1549,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540577062076</updated>
-      <workItem from="1540577066436" duration="9418000" />
+      <workItem from="1540577066436" duration="9802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9418000" />
+    <option name="totallyTimeSpent" value="9802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1580,10 +1572,10 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Build" weight="0.3294893" />
       <window_info anchor="right" id="Database" />
-      <window_info active="true" anchor="right" id="Task Description" visible="true" weight="0.33282906" />
+      <window_info anchor="right" id="Task Description" visible="true" weight="0.33282906" />
       <window_info anchor="right" id="Gradle" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

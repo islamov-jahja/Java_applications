@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CaesarCipherTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-26T20:55:22" hostname="Admin-pc" time="0.197">
+<testsuite name="CaesarCipherTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-26T20:58:47" hostname="Admin-pc" time="0.166">
   <properties/>
-  <testcase name="testWrongArguments" classname="CaesarCipherTest" time="0.014"/>
-  <testcase name="testSolution" classname="CaesarCipherTest" time="0.182"/>
+  <testcase name="testWrongArguments" classname="CaesarCipherTest" time="0.015"/>
+  <testcase name="testSolution" classname="CaesarCipherTest" time="0.15"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
