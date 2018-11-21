@@ -15,4 +15,8 @@ public class Bill {
     if (Sum >= count)
       Sum -= count;
   }
+
+  public void clean(){
+    Sum = 0;
+  }
 }

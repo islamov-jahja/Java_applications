@@ -19,6 +19,7 @@ public class Basket {
   }
 
   public Map<String, ProductResidue> GetProducts(){
-    return m_products;
+    Map<String, ProductResidue> tmp = new HashMap<String, ProductResidue>(m_products);
+    return tmp;
   }
 }

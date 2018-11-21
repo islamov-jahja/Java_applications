@@ -11,10 +11,22 @@ import src.bill.Bill;
 import java.util.Map;
 
 public class Cashdesk {
-  public Bill m_bill;
-  public Basket m_basket;
-  public Customer m_customer;
-  private Report m_report;
+  private Bill m_bill= new Bill();
+  private Basket m_basket;
+  private Customer m_customer;
+  private Report m_report = new Report();
+
+  public void SetBasket(Basket basket) {
+    m_basket = basket;
+  }
+
+  public void SetCustomer(Customer customer) {
+    m_customer = customer;
+  }
+
+  public void PrintReport(){
+    m_report.PrintReport();
+  }
 
   private float CalculateBill(){
     float sum = 0;
@@ -30,8 +42,14 @@ public class Cashdesk {
   }
 
   public float GetBill(){
+    if (m_bill.GetBill() != 0)
+      m_bill.DeductFromBill(CalculateBill());
     m_bill.AddToBill(CalculateBill());
     return m_bill.GetBill();
+  }
+
+  public void CleanBill(){
+    m_bill.clean();
   }
 
   public boolean BillWasPaid(){
@@ -44,7 +62,6 @@ public class Cashdesk {
 
     for (Map.Entry<String, ProductResidue> myPair : m_basket.GetProducts().entrySet())
       m_report.WriteInTheReport(myPair.getValue().GetCountOfProduct(), myPair.getValue().GetTypeOfProduct());
-
     return true;
   }
 
@@ -63,5 +80,9 @@ public class Cashdesk {
       return false;
 
     return true;
+  }
+
+  public float GetCountOfBonuses(){
+    return CalculateBonuses();
   }
 }

@@ -16,17 +16,31 @@ public class Customer {
   private float m_cashInCreditCard;
   private PaymentMethod m_methodOfPay;
   private Basket m_basket = new Basket();
+  private int m_numberOfCustomer;
+
+  public Basket GetBasket(){
+    Basket tmp = new Basket();
+    for(Map.Entry<String, ProductResidue> myPair : m_basket.GetProducts().entrySet())
+      tmp.PutInTheBasket(myPair.getValue().GetCountOfProduct(), myPair.getValue().GetTypeOfProduct());
+
+    return tmp;
+  }
+
+  public int GetNumberOfCustomer(){
+    return m_numberOfCustomer;
+  }
 
   public PaymentMethod GetMethodOfPay(){
     return m_methodOfPay;
   }
 
-  public Customer(TypesOfPeople category, float cash, float bonuses, float cashInCreditCard, PaymentMethod methodOfPay) {
+  public Customer(TypesOfPeople category, float cash, float bonuses, float cashInCreditCard, PaymentMethod methodOfPay, int numberOfCustomer) {
     m_category = category;
     m_cash = cash;
     m_bonuses = bonuses;
     m_cashInCreditCard = cashInCreditCard;
     m_methodOfPay = methodOfPay;
+    m_numberOfCustomer = numberOfCustomer;
   }
 
   public ResultAddedToBasket AddProductToBasket(float count, Product product) {
@@ -45,6 +59,8 @@ public class Customer {
 
     if (m_category == TypesOfPeople.Retired)
       sumOfShopping += count * (product.GetUnitPrice() * (100- product.GetDiscount().GetPercent()));
+    else
+      sumOfShopping += count * product.GetUnitPrice();
 
     if (sumOfShopping <= cash)
       m_basket.PutInTheBasket(count, product);
