@@ -1,0 +1,36 @@
+[
+ {
+  "Error": {
+   "Message": "ERRORED! Got Exception (if any): ERROR: Bot #0: Received invalid character 'Exception in thread \"main\" java.lang.NullPointerExceptionE'. (at character 1.)\nInput received from bot:\nException in thread \"main\" java.lang.NullPointerException\n^; Response received (if any): Exception in thread \"main\" java.lang.NullPointerException\tat hlt.Position.getClosestPoint(Position.java:39)\tat hlt.Navigation.navigateShipToDock(Navigation.java:14)\tat MyBot.main(MyBot.java:60)",
+   "Turn": 1
+  },
+  "Frames": [
+   {
+    "Time": 549,
+    "Turn": 0
+   },
+   {
+    "Time": 42
+   }
+  ],
+  "PlayerID": 0,
+  "PlayerName": "Tamagocchi"
+ },
+ {
+  "Error": {
+   "Message": "ERRORED! Got Exception (if any): ERROR: Bot #1: Received invalid character 'Exception in thread \"main\" java.lang.NullPointerExceptionE'. (at character 1.)\nInput received from bot:\nException in thread \"main\" java.lang.NullPointerException\n^; Response received (if any): Exception in thread \"main\" java.lang.NullPointerException\tat hlt.Position.getClosestPoint(Position.java:39)\tat hlt.Navigation.navigateShipToDock(Navigation.java:14)\tat MyBot.main(MyBot.java:60)",
+   "Turn": 1
+  },
+  "Frames": [
+   {
+    "Time": 499,
+    "Turn": 0
+   },
+   {
+    "Time": 51
+   }
+  ],
+  "PlayerID": 1,
+  "PlayerName": "Tamagocchi"
+ }
+]

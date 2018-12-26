@@ -5,8 +5,6 @@ import product.Product;
 import product.TypesOfProducts;
 import product.UnitOfProduct;
 
-import static org.junit.Assert.*;
-
 public class ReportTest {
 
   @Test

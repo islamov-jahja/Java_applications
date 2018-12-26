@@ -1,0 +1,36 @@
+[
+ {
+  "Error": {
+   "Message": "ERRORED! Got Exception (if any): ERROR: Bot #0: Invalid thrust 59 for ship 0 (maximum is 7). (at character 10.)\nInput received from bot:\nt 0 59 14 t 1 60 17 t 2 59 11 \n         ^; Response received (if any): t 0 59 14 t 1 60 17 t 2 59 11 ",
+   "Turn": 1
+  },
+  "Frames": [
+   {
+    "Time": 524,
+    "Turn": 0
+   },
+   {
+    "Time": 43
+   }
+  ],
+  "PlayerID": 0,
+  "PlayerName": "Tamagocchi"
+ },
+ {
+  "Error": {
+   "Message": "ERRORED! Got Exception (if any): ERROR: Bot #1: Invalid thrust 45 for ship 3 (maximum is 7). (at character 11.)\nInput received from bot:\nt 3 45 172 t 4 46 169 t 5 45 176 \n          ^; Response received (if any): t 3 45 172 t 4 46 169 t 5 45 176 ",
+   "Turn": 1
+  },
+  "Frames": [
+   {
+    "Time": 474,
+    "Turn": 0
+   },
+   {
+    "Time": 34
+   }
+  ],
+  "PlayerID": 1,
+  "PlayerName": "Tamagocchi"
+ }
+]

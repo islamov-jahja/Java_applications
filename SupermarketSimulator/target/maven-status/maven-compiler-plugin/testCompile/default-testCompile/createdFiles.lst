@@ -1,0 +1,7 @@
+customer\CustomerTest.class
+product\ProductTest.class
+src\bill\BillTest.class
+discount\DiscountTest.class
+report\ReportTest.class
+product_residue\ProductResidueTest.class
+payment_method\PaymentMethodTest.class

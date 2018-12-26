@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Report {
-  private Map<String, ProductResidue> products = new HashMap<String, ProductResidue>();
+  private final Map<String, ProductResidue> products = new HashMap<String, ProductResidue>();
 
   public void WriteInTheReport(float count, Product product) {
     float countTmp = 0;

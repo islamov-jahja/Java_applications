@@ -1,0 +1,17 @@
+basket\Basket.class
+customer\TypesOfPeople.class
+main.class
+customer\Customer.class
+product\TypesOfProducts.class
+cash_desk\Cashdesk.class
+product_residue\ProductResidue.class
+product\UnitOfProduct.class
+customer\ResultAddedToBasket.class
+payment_method\PaymentMethod.class
+src\bill\Bill.class
+functions\FunctionsForSupermarket.class
+supermarket\Supermarket.class
+product\Product.class
+report\Report.class
+payment_method\Methods.class
+discount\Discount.class

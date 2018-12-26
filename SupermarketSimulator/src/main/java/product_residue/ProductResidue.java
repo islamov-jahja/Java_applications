@@ -3,8 +3,8 @@ package product_residue;
 import product.Product;
 
 public class ProductResidue {
-  private float m_countOfProduct = 0;
-  private Product m_product;
+  private float m_countOfProduct;
+  private final Product m_product;
 
   public ProductResidue(Product product){
     m_product = product;

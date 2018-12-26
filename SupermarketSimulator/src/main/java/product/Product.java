@@ -3,18 +3,17 @@ package product;
 import discount.Discount;
 
 public class Product {
-  private String m_name;
-  private TypesOfProducts m_category;
-  private float m_unitPrice;
-  private Discount m_discount;
+  private final String m_name;
+  private final TypesOfProducts m_category;
+  private final float m_unitPrice;
+  private final Discount m_discount;
   private float m_bonuses;
-  private UnitOfProduct m_unitOfProduct;
+  private final UnitOfProduct m_unitOfProduct;
 
   public Product(String name, TypesOfProducts category, float unitPrice, float percentOfDiscount, UnitOfProduct unitOfProduct) {
     m_name = name;
     m_category = category;
-    Discount discount = new Discount(percentOfDiscount);
-    m_discount = discount;
+    m_discount = new Discount(percentOfDiscount);
     m_unitPrice = unitPrice;
     m_unitOfProduct = unitOfProduct;
   }
@@ -22,8 +21,7 @@ public class Product {
   public Product(String name, TypesOfProducts category, float unitPrice, float percentOfDiscount, UnitOfProduct unitOfProduct, float bonuses) {
     m_name = name;
     m_category = category;
-    Discount discount = new Discount(percentOfDiscount);
-    m_discount = discount;
+    m_discount = new Discount(percentOfDiscount);
     m_unitPrice = unitPrice;
     m_bonuses = bonuses;
     m_unitOfProduct = unitOfProduct;
@@ -32,8 +30,7 @@ public class Product {
   public Product(String name, TypesOfProducts category, float unitPrice, UnitOfProduct unitOfProduct) {
     m_name = name;
     m_category = category;
-    Discount discount = new Discount(0);
-    m_discount = discount;
+    m_discount = new Discount(0);
     m_unitPrice = unitPrice;
     m_unitOfProduct = unitOfProduct;
   }

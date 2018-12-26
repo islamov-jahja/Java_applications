@@ -9,9 +9,9 @@ import java.util.Map;
 
 public class Supermarket {
   private boolean m_isOpen;
-  private long m_timeToWork;
-  private Map<String, ProductResidue> m_rangeOfGoods = new HashMap<String, ProductResidue>();
-  public Cashdesk cashdesk = new Cashdesk();
+  private final long m_timeToWork;
+  private final Map<String, ProductResidue> m_rangeOfGoods = new HashMap<String, ProductResidue>();
+  public final Cashdesk cashdesk = new Cashdesk();
 
   public void ToOpen() {
     m_isOpen = true;
@@ -50,7 +50,6 @@ public class Supermarket {
 
   public Map<String, ProductResidue> GetProducts()
   {
-    Map<String, ProductResidue> tmp = new HashMap<String, ProductResidue>(m_rangeOfGoods);
-    return tmp;
+    return m_rangeOfGoods;
   }
 }
